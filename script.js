@@ -33,3 +33,24 @@ function draw() {
       this.isBlack = (x + y) % 2 == 1; // determină dacă această față zâmbitoare trebuie să fie neagră sau albă
     }
 }
+
+show() {
+    let smileyColor = this.isBlack ? 0 : 250;
+    fill(smileyColor);
+    ellipse(this.x * cellSize + cellSize / 2, this.y * cellSize + cellSize / 2, 50); 
+    fill(255-smileyColor); 
+    arc(this.x * cellSize + cellSize / 2, this.y * cellSize + cellSize / 2 + 10, 25, 15, 0, PI);
+
+    fill(255-smileyColor); 
+    ellipse(this.x * cellSize + cellSize / 3.1, this.y * cellSize + cellSize / 2.5, 15); 
+    ellipse(this.x * cellSize + cellSize / 1.5, this.y * cellSize + cellSize / 2.5, 15); 
+    fill(smileyColor); 
+    
+ 
+  ellipse(this.x * cellSize + cellSize / 3.5, this.y * cellSize + cellSize / 2.5, 4); 
+  ellipse(this.x * cellSize + cellSize / 1.6, this.y * cellSize + cellSize / 2.5, 4); 
+  fill(255-smileyColor);
+  ellipse(this.x * cellSize + cellSize / 2, this.y * cellSize + cellSize / 2 + 5, 10, 5);
+
+
+}
