@@ -14,3 +14,14 @@ function draw() {
       smileyFaces[i].show(); 
     }
   }
+
+  function drawChessboard() {
+    let colors = [255, 200]; 
+    for (let i = 0; i < 8; i++) {
+      for (let j = 0; j < 8; j++) {
+        let colorIndex = (i + j) % 2; 
+        fill(colors[colorIndex]);
+        rect(i * cellSize, j * cellSize, cellSize, cellSize);
+      }
+    }
+  }
