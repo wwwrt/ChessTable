@@ -28,9 +28,9 @@ function draw() {
 
   class SmileyFace {
     constructor(x, y) {
-      this.x = x; // poziția x pe tabla de șah
-      this.y = y; // poziția y pe tabla de șah
-      this.isBlack = (x + y) % 2 == 1; // determină dacă această față zâmbitoare trebuie să fie neagră sau albă
+      this.x = x;
+      this.y = y; 
+      this.isBlack = (x + y) % 2 == 1; 
     }
 }
 
