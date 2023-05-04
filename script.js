@@ -6,3 +6,11 @@ function setup() {
         smileyFaces.push(smileyFace);
       }
 }
+
+function draw() {
+    background(255); 
+    drawChessboard();
+    for (let i = 0; i < smileyFaces.length; i++) {
+      smileyFaces[i].show(); 
+    }
+  }
